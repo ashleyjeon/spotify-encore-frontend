@@ -5,9 +5,66 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F2F0E9;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.heading {
+  font-family: "Fraunces", serif;
+  font-weight: 600; /* any value between 100-900 */
+  font-optical-sizing: auto;
+  font-style: italic;
+  margin: 2rem 0 0 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 80%;
+  margin: auto;
+  gap: 2rem;
+}
+
+.notes, .login {
+  flex: 0 1 20%;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.notes {
+  justify-content: flex-end;
+  
+}
+
+.login {
+  margin-top: 5%;
+  justify-content: flex-start;
+
+}
+
+.cassette {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cassette img {
+  width: 120%;
+  max-width: 600px;
+  height: auto;
 }

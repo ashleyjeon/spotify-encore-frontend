@@ -1,9 +1,10 @@
 import React from 'react'; 
 
+const API_BASE_URL = process.env.REACT_API_BASE_URL; 
 
 const LoginButton = () => {
     const handleLogin = () => {
-        window.location.href = "https://spotify-encore.onrender.com/auth/login";
+        window.location.href = `${API_BASE_URL}/auth/login`;
     }
 
     return (
